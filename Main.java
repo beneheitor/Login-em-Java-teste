@@ -1,25 +1,28 @@
+import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
         byte escolha;
         double cpf = 0;
         double cpfLogin;
         int senha = 0;
         int senhaLogin;
+        int numero;
 
 
-
-        System.out.println("--------APLICATIVO BANCO DO HEITOR-------- ");
+        System.out.println("--------APLICATIVO DO BANCO EM JAVA-------- ");
         System.out.println("Informe seu nome para continuarmos: ");
         String nome = scanner.nextLine();
 
         cpfLogin = cpf;
         senhaLogin = senha;
 
-        System.out.println("Olá, " + nome + "!");  
+        System.out.println("Olá, " + nome + "!");
+          
         do {
         System.out.println("--------INFORME O QUE DESEJA FAZER--------------");
         System.out.println("(1) - QUERO VERIFICAR O SALDO");
@@ -33,7 +36,7 @@ public class Main {
 
         switch (escolha) {
             case 1:
-                System.out.println("Seu saldo é de: 5000R$");
+                System.out.println ("Seu saldo é: " + (numero = random.nextInt(10000)));
                 
                 break;
         
@@ -78,6 +81,7 @@ public class Main {
         
         } while (escolha != 4);
         scanner.close();
+        
         
 }
 
