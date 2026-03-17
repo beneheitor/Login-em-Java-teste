@@ -1,1 +1,1 @@
-Teste  em java com cadastro e login em um menu.
+Teste  em java simulando um banco. Onde você consegue verificar o saldo, cadastrar, logar e sair.
